@@ -21,21 +21,21 @@ The predicted human and image layout are then integrated with the existing desig
 Click any image to open the full-resolution figure.
 
 <p align="center">
-  <a href="figure/fig1_teaser.png"><img src="figure/fig1_teaser.png" alt="Overview of design-conditioned 3D human adding" width="90%"></a>
+  <a href="https://raw.githubusercontent.com/GreyNails/Human-aware-Design-Generation-Adding-3D-Humans-into-Graphic-Designs/main/figure/fig1_teaser.png"><img src="https://raw.githubusercontent.com/GreyNails/Human-aware-Design-Generation-Adding-3D-Humans-into-Graphic-Designs/main/figure/fig1_teaser.png" alt="Overview of design-conditioned 3D human adding" width="90%"></a>
 </p>
 
 <p align="center">
-  <a href="figure/fig2_motivation.png"><img src="figure/fig2_motivation.png" alt="Motivation examples" width="45%"></a>
-  <a href="figure/fig3_model.png"><img src="figure/fig3_model.png" alt="Model overview" width="45%"></a>
+  <a href="https://raw.githubusercontent.com/GreyNails/Human-aware-Design-Generation-Adding-3D-Humans-into-Graphic-Designs/main/figure/fig2_motivation.png"><img src="https://raw.githubusercontent.com/GreyNails/Human-aware-Design-Generation-Adding-3D-Humans-into-Graphic-Designs/main/figure/fig2_motivation.png" alt="Motivation examples" width="45%"></a>
+  <a href="https://raw.githubusercontent.com/GreyNails/Human-aware-Design-Generation-Adding-3D-Humans-into-Graphic-Designs/main/figure/fig3_model.png"><img src="https://raw.githubusercontent.com/GreyNails/Human-aware-Design-Generation-Adding-3D-Humans-into-Graphic-Designs/main/figure/fig3_model.png" alt="Model overview" width="45%"></a>
 </p>
 
 <p align="center">
-  <a href="figure/fig4_comparison.png"><img src="figure/fig4_comparison.png" alt="Qualitative comparison" width="45%"></a>
-  <a href="figure/fig5_rendering.png"><img src="figure/fig5_rendering.png" alt="3D human rendering results" width="45%"></a>
+  <a href="https://raw.githubusercontent.com/GreyNails/Human-aware-Design-Generation-Adding-3D-Humans-into-Graphic-Designs/main/figure/fig4_comparison.png"><img src="https://raw.githubusercontent.com/GreyNails/Human-aware-Design-Generation-Adding-3D-Humans-into-Graphic-Designs/main/figure/fig4_comparison.png" alt="Qualitative comparison" width="45%"></a>
+  <a href="https://raw.githubusercontent.com/GreyNails/Human-aware-Design-Generation-Adding-3D-Humans-into-Graphic-Designs/main/figure/fig5_rendering.png"><img src="https://raw.githubusercontent.com/GreyNails/Human-aware-Design-Generation-Adding-3D-Humans-into-Graphic-Designs/main/figure/fig5_rendering.png" alt="3D human rendering results" width="45%"></a>
 </p>
 
 <p align="center">
-  <a href="figure/fig6_more_comparison.png"><img src="figure/fig6_more_comparison.png" alt="Additional comparison results" width="70%"></a>
+  <a href="https://raw.githubusercontent.com/GreyNails/Human-aware-Design-Generation-Adding-3D-Humans-into-Graphic-Designs/main/figure/fig6_more_comparison.png"><img src="https://raw.githubusercontent.com/GreyNails/Human-aware-Design-Generation-Adding-3D-Humans-into-Graphic-Designs/main/figure/fig6_more_comparison.png" alt="Additional comparison results" width="70%"></a>
 </p>
 
 ## Status
