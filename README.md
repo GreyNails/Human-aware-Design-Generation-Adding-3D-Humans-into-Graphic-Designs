@@ -28,14 +28,6 @@ Click any image to open the full-resolution figure.
 
 Given an input design (1st column) with a set of elements such as images, vector shapes and texts, our model adds a 3D human into the design (2nd column) by predicting its 3D pose, 2D framing, and the layout of the image containing the human. The result is a cohesive output design with the 3D human added (3rd column), which can further be rendered into a realistic human image (4th column).
 
-### Motivation
-
-<p align="center">
-  <a href="https://raw.githubusercontent.com/GreyNails/Human-aware-Design-Generation-Adding-3D-Humans-into-Graphic-Designs/main/figure/fig2_motivation.png"><img src="https://raw.githubusercontent.com/GreyNails/Human-aware-Design-Generation-Adding-3D-Humans-into-Graphic-Designs/main/figure/fig2_motivation.png" alt="Motivation example" width="70%"></a>
-</p>
-
-An example graphic design with a human image (left) and the same design with the 3D representation of the human (right). Human pose and framing play a critical role in guiding how viewers explore a design and what feelings it evokes, which motivates modeling the human explicitly in 3D.
-
 ### Model Overview
 
 <p align="center">
@@ -59,14 +51,6 @@ Qualitative comparison of different methods. Our approach predicts 3D poses, 2D 
 </p>
 
 Results of different methods where the added 3D humans are rendered into realistic human images, showing that our predicted representations integrate naturally into the final designs.
-
-### Additional Comparisons
-
-<p align="center">
-  <a href="https://raw.githubusercontent.com/GreyNails/Human-aware-Design-Generation-Adding-3D-Humans-into-Graphic-Designs/main/figure/fig6_more_comparison.png"><img src="https://raw.githubusercontent.com/GreyNails/Human-aware-Design-Generation-Adding-3D-Humans-into-Graphic-Designs/main/figure/fig6_more_comparison.png" alt="Additional comparison results" width="85%"></a>
-</p>
-
-More qualitative results across a range of designs, further illustrating the consistency and quality of the generated human-aware designs.
 
 ## Status
 
