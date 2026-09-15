@@ -1,0 +1,87 @@
+\documentclass[sigconf]{acmart}
+\AtBeginDocument{%
+  \providecommand\BibTeX{{%
+    Bib\TeX}}}
+
+\setcopyright{cc}
+
+\copyrightyear{2026}
+\acmYear{2026}
+
+\acmDOI{10.1145/3767308.3836019}
+
+\acmConference[MM '26] {Proceedings of the 34th ACM International Conference on Multimedia}{November 10--14, 2026}{Rio de Janeiro, Brazil.}
+\acmISBN{979-8-4007-2213-4/2026/11}
+
+\setcctype{by}
+
+\settopmatter{printacmref=true}
+
+\begin{document}
+
+\title{Human-aware Design Generation: Adding 3D Humans into Graphic Designs}
+
+\author{Zijin Hou}
+\affiliation{%
+  \institution{ShanghaiTech University}
+  \city{Shanghai}
+  \country{China}
+}
+\email{houzj2025@shanghaitech.edu.cn}
+\orcid{0009-0001-3078-4964}
+
+\author{Ying Cao}
+\affiliation{%
+  \institution{ShanghaiTech University}
+  \city{Shanghai}
+  \country{China}
+}
+\email{caoying59@gmail.com}
+\orcid{0000-0002-9288-3167}
+\authornote{Corresponding author.}
+
+\begin{abstract}
+Graphic designs nowadays predominantly contain human images, where people are posed and framed in a delicate way to guide viewers' visual exploration and evoke desired feelings. Despite recent progress in automatic graphic design generation, there has been no work on investigating the role of the human representations in design creation. In this paper, we seek to emphasize the importance of visual human representations in graphic design generation, by studying a novel task, dubbed as design-conditioned 3D human adding. To solve this task, we propose a model that adds 3D human representations into an existing partial design, by predicting their 3D poses, their 2D composition in the image containing them, as well as the spatial arrangement of the image in the input design, to generate a complete design.
+Our experiments show that our model outperforms baselines by predicting the 3D human poses, 2D framing and human image layout that better harmonize with the other existing design elements, and generating higher-quality holistic designs. Our work is the first to explore connections between 3D human generation and 2D graphic design generation, which would inspire future research in leveraging 3D information to build more powerful generative models for graphic designs in the 2D domain.The code is available at
+\href{https://github.com/GreyNails/Human-aware-Design-Generation-Adding-3D-Humans-into-Graphic-Designs}{GitHub}.
+\end{abstract}
+
+\begin{CCSXML}
+<ccs2012>
+<concept>
+<concept_id>10010147.10010371</concept_id>
+<concept_desc>Computing methodologies~Computer graphics</concept_desc>
+<concept_significance>500</concept_significance>
+</concept>
+</ccs2012>
+\end{CCSXML}
+
+\ccsdesc[500]{Computing methodologies; Computer graphics}
+
+\keywords{Graphic Design, Design Generation, Generative Model}
+
+\begin{teaserfigure}
+  \centering
+  \includegraphics[width=\textwidth]{figure/fig1_teaser.png}
+  \vspace{-2.5em}
+  \caption{
+  Design-conditioned 3D human adding. Given an input design (1st column) with a set of elements, such as images, vector shapes and texts, our model adds a 3D human into the design (2nd column), by predicting its 3D pose and 2D framing, as well as the layout of the image containing the human in the input design (the 2D box on the design). The model results in a cohesive output design with the 3D human added (3th column). The 3D human representation can further be rendered into a realistic human image (4th column).
+   }
+  \label{fig:introduction}
+\end{teaserfigure}
+
+\maketitle
+
+\input{sec/introduction}
+\input{sec/related_work}
+\input{sec/method}
+\input{sec/experiments}
+\input{sec/conclusion}
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{references}
+
+\appendix
+
+\end{document}
+\endinput

@@ -1,0 +1,33 @@
+\section{Introduction}
+\label{sec:intro}
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.9\linewidth]{figure/fig2_motivation.png}
+  \caption{An example graphic design with a human image (left) and the design with the 3D representation of the human (right).}
+  \label{fig:example}
+\end{figure}
+
+The use of human images is prevalent in graphic designs such as posters, magazines and advertisements. What poses people in an image take and how they are framed in the image play critical roles in affecting how viewers visually explore the entire design and what feelings are evoked. Consider the design in Figure~\ref{fig:example}
+as an example. When looking at the design, one may first attend to the face of the woman, and then move the eyes to her hand near the face, Finally, the visual attention shifts to the left along the direction pointed by the finger, reaching the potted plant. This means that the pose of the woman can effectively direct one's visual flow throughout the design. Furthermore, the woman is framed in a medium full shot that starts from the top of the head and ends just below the waist, which conveys the feelings of ``strong'' and ``confident''. However, creating a human image with ideal posing and framing for a design is particularly challenging, requiring extensive design knowledge and experience, along with some creativity.
+
+In recent years, there has been a growing interest in developing generative models for graphic design with some encouraging results.
+However, the role of visual human representations has not yet been considered explicitly, which hampers the generation of designs where human images are employed effectively.    
+
+In view of the issue above, in this paper, we take an initial step towards \textit{human-aware design generation}, by investigating a new task, \textit{design-conditioned 3D human adding}. As shown in Figure \ref{fig:introduction}, given an input partial design without a human image, the task aims to add 3D human representations into the input design to form a cohesive complete design, where the added human representations and the other elements are harmonious with each other. The generated 3D representations can further be rendered into a realistic human image. 
+The purpose of generating 3D representations explicitly, instead of only 2D images, is to offer great controllability, which allows users to easily change the poses and composition of people in the rendered image through manipulating the generated 3D representations directly. Such controllability is imperative for the practical deployment of design generative models in the design workflow, since designers wish to have a higher degree of control over the generation process when working with the models.
+
+We propose \textit{POFRAY}, \textbf{Po}se-\textbf{Fr}ame-L\textbf{ay}out, a model to solve this new task. POFRAY uses a partial layered design with a set of multimodal elements as a context, and add 3D humans into it by predicting what \textit{poses} they should take in 3D space, how they are \textit{framed} within the 2D image containing them, as well as how the image should be \textit{laid out} in the design. 
+Specifically, POFRAY employs a multimodal encoder to process the input elements to extract design context features. The features are then used to condition two separate generators: a pose and framing generator, a layout generator. 
+The pose and framing generator employs a causal Transformer to autoregressively generate a sequence of tokens that control the 3D poses of the added humans and their 2D framing in the image. The layout generator uses a bidirectional Transformer to generate the layout of the added human image in the input design. To train and evaluate our model, we construct \textit{3DHumanInDesign}, a benchmark of $\sim$10k layered graphic designs. For each design, we remove the human image
+to form the input, and use the estimated human pose and framing parameters from the human image alongside the original layout of the the human image as the prediction targets.
+
+Experimental results on our collected benchmark demonstrate that our model outperforms alternative baselines, generating higher-quality complete designs. The generated human poses, framing and human image layout of our model are better aligned with the input design context, compared to those of the baselines.     
+
+Our major contributions are threefold:
+\begin{itemize}
+    \item We formulate a new problem in the graphic design generation field: design-conditioned 3D human adding. The problem can be viewed as a specific form of human-aware design generation, where visual human representations need to be modeled explicitly. To the best of our knowledge, this is the first time that the two fields, 3D human generation and 2D graphic design generation, are bridged. We hope that our work can inspire future work on leveraging various 3D information for graphic design synthesis, which was previously addressed with 2D-only methods.
+    \item We propose a model, POFRAY, which adds 3D humans into an input design by simultaneously generating 3D human poses, the 2D framing of the humans in an image, and the layout of the human image in the design.
+    \item We build a benchmark, 3DHumanInDesign, to facilitate future research on design-conditioned 3D human adding.
+\end{itemize}
+

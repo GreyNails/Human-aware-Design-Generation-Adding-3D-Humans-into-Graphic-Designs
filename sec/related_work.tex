@@ -1,0 +1,30 @@
+\section{Relate Work}
+\label{sec:Relatework}
+
+\subsection{Graphic Design Generation}
+
+Automatic graphic design generation has emerged as a crucial research area aimed at facilitating the design process.
+CanvasVAE~\cite{yamaguchi2021canvasvae}  introduces a variational autoencoder to generate vector graphic designs represented as sets of canvas and element attributes. GOL~\cite{order} 
+learns a design element ordering strategy to optimize the performance of design generative models. In recent years, a large body of methods on text-to-design generation has emerged to convert textual design intentions into multi-layer graphic designs, e.g., by building a cascaded system comprising multiple specialized models for different sub-tasks (e.g., background generation, typography generation)~\cite{cole,opencole},
+formulating layered design generation as multi-layer transparent image generation~\cite{art}, 
+utilizing a multimodal large language model to generate graphic designs as text-image documents~\cite{igd}, 
+and training a simple diffusion model on sequences of discrete element attribute tokens ~\cite{LADEREIN}.There is also a line of work on automatic design composition, which aims to compose a set of input design elements into a complete design ~\cite{shabani2024visual,Graphist,LaDeCo}. 
+FlexDM~\cite{flexdm} is a unified model that can solve multiple design tasks (e.g., image filling, layout generation, typography generation), by representing a graphic design as a set of elements, each comprising a set of fields, and formulating different design tasks as masked field prediction problems with different masking patterns.
+
+Recent years have also seen a growing interest in developing models for generating layouts of graphic design elements~\cite{LayoutPrompter,jyothi2019layoutvae,Content-aware-Generative,VTN,PosterLlama,LayoutDiffusion,LayoutGAN,yang2026learninginteractionimagelayout}.
+The success of Transformers in natural language processing has inspired their application to layout generation. LayoutTransformer~\cite{gupta2021layouttransformer} formulates layout generation as a sequence modeling problem and employs the self-attention mechanism to capture element relationships. BLT~\cite{kong2022blt} proposes a bidirectional Transformer that generates all layout tokens in parallel to enable flexible controllable generation.
+Our method leverages Transformers to predict 3D human pose, 2D framing, and human image layout.
+
+To our best knowledge, we are the first to model 3D human representations in 2D graphic designs, which has not been yet explored in previou studies.
+
+\subsection{Human Pose Estimation and Generation}
+
+3D Human pose and shape estimation
+have been extensively studied in computer vision, with a range of applications in behavior analysis, animation and gaming.
+Recent advances in expressive human pose and shape estimation (EHPS) enable the reconstruction of 3D whole-body meshes of a person\textemdash including the body, hands and face\textemdash from monocular images or videos using end-to-end models~\cite{OSX,cai2023smplerx,aios} 
+that regress the parameters of a 3D parametric human model (e.g., SMPL-X~\cite{SMPLX}.
+
+Conditional 3D human pose generation based on input conditions of various modalities has recently gained increasing attention. For example, ChatPose~\cite{feng2024chatpose} generates 3D human poses from natural language descriptions, optionally with image inputs. GenZI~\cite{li2024genzi} proposes a method to synthesize a posed 3D human that interacts with a given 3D scene according to an input text description. A recent study~\cite{jiang2024scaling} focuses on dynamic human-scene interaction modeling, generating 3D human motions (sequences of 3D poses) that are plausible in a given 3D scene context. NIFTY~\cite{kulkarni2024nifty} addresses the problem of object-conditioned human motion synthesis, which generates realistic 3D motions of a person interacting with a given 3D object.
+
+In this work, we focus on generating 3D human poses in the context of graphic designs.
+

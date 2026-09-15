@@ -1,0 +1,613 @@
+@misc{clip,
+      title={Learning Transferable Visual Models From Natural Language Supervision}, 
+      author={Alec Radford and Jong Wook Kim and Chris Hallacy and Aditya Ramesh and Gabriel Goh and Sandhini Agarwal and Girish Sastry and Amanda Askell and Pamela Mishkin and Jack Clark and Gretchen Krueger and Ilya Sutskever},
+      year={2021},
+      eprint={2103.00020},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2103.00020}, 
+}
+
+
+
+@article{order,
+  author = {Yang, Bo and Cao, Ying},
+  title = {Order Matters: Learning Element Ordering for Graphic Design Generation},
+  year = {2025},
+  issue_date = {August 2025},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  volume = {44},
+  number = {4},
+  issn = {0730-0301},
+  url = {https://doi.org/10.1145/3730858},
+  doi = {10.1145/3730858},
+  journal = {ACM Trans. Graph.},
+  articleno = {34},
+  numpages = {16}
+}
+
+
+
+@article{flexdm,
+  title={Towards Flexible Multi-modal Document Models},
+  author={Naoto Inoue and Kotaro Kikuchi and Edgar Simo-Serra and Mayu Otani and Kota Yamaguchi},
+  journal={2023 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2023},
+  pages={14287-14296},
+  url={https://api.semanticscholar.org/CorpusID:257900939}
+}
+
+
+@article{smpl,
+author = {Loper, Matthew and Mahmood, Naureen and Romero, Javier and Pons-Moll, Gerard and Black, Michael J.},
+title = {SMPL: a skinned multi-person linear model},
+year = {2015},
+issue_date = {November 2015},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {34},
+number = {6},
+issn = {0730-0301},
+url = {https://doi.org/10.1145/2816795.2818013},
+doi = {10.1145/2816795.2818013},
+abstract = {We present a learned model of human body shape and pose-dependent shape variation that is more accurate than previous models and is compatible with existing graphics pipelines. Our Skinned Multi-Person Linear model (SMPL) is a skinned vertex-based model that accurately represents a wide variety of body shapes in natural human poses. The parameters of the model are learned from data including the rest pose template, blend weights, pose-dependent blend shapes, identity-dependent blend shapes, and a regressor from vertices to joint locations. Unlike previous models, the pose-dependent blend shapes are a linear function of the elements of the pose rotation matrices. This simple formulation enables training the entire model from a relatively large number of aligned 3D meshes of different people in different poses. We quantitatively evaluate variants of SMPL using linear or dual-quaternion blend skinning and show that both are more accurate than a Blend-SCAPE model trained on the same data. We also extend SMPL to realistically model dynamic soft-tissue deformations. Because it is based on blend skinning, SMPL is compatible with existing rendering engines and we make it available for research purposes.},
+journal = {ACM Trans. Graph.},
+month = nov,
+articleno = {248},
+numpages = {16},
+keywords = {soft-tissue, skinning, body shape, blendshapes}
+}
+
+@article{smplh,
+title = {Embodied Hands: Modeling and Capturing Hands and Bodies Together},
+author = {Romero, Javier and Tzionas, Dimitrios and Black, Michael J.},
+journal = {ACM Transactions on Graphics, (Proc. SIGGRAPH Asia)},
+volume = {36},
+number = {6},
+series = {245:1--245:17},
+month = nov,
+year = {2017},
+month_numeric = {11}
+}
+
+
+
+@article{tokenhmr,
+  title={TokenHMR: Advancing Human Mesh Recovery with a Tokenized Pose Representation},
+  author={Sai Kumar Dwivedi and Yu Sun and Priyanka Patel and Yao Feng and Michael J. Black},
+  journal={2024 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2024},
+  pages={1323-1333},
+  url={https://api.semanticscholar.org/CorpusID:269362645}
+}
+
+
+@article{aios,
+  title={AiOS: All-in-One-Stage Expressive Human Pose and Shape Estimation},
+  author={Qingping Sun and Yanjun Wang and Ailing Zeng and Wanqi Yin and Chen Wei and Wenjia Wang and Haiyi Mei and C.K.S. Leung and Ziwei Liu and Lei Yang and Zhongang Cai},
+  journal={2024 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2024},
+  pages={1834-1843},
+  url={https://api.semanticscholar.org/CorpusID:268691528}
+}
+#--------------------------------------related work--------------------------------------#
+% Graphic Design Generation
+
+@inproceedings{yamaguchi2021canvasvae,
+  title={{CanvasVAE}: Learning to Generate Vector Graphic Documents},
+  author={Yamaguchi, Kota},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+  pages={5471--5480},
+  year={2021}
+}
+
+
+
+@inproceedings{shabani2024visual,
+  title={Visual Layout Composer: Image-Vector Dual Diffusion Model for Design Layout Generation},
+  author={Shabani, Mohammad Amin and Wang, Zhaowen and Liu, Difan and Zhao, Nanxuan and Yang, Jimei and Furukawa, Yasutaka},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  pages={9222--9231},
+  year={2024}
+}
+
+% Layout Generation - VAE and GAN
+
+@inproceedings{jyothi2019layoutvae,
+  title={{LayoutVAE}: Stochastic Scene Layout Generation From a Label Set},
+  author={Jyothi, Akash Abdu and Durand, Thibaut and He, Jiawei and Sigal, Leonid and Mori, Greg},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+  pages={9895--9904},
+  year={2019}
+}
+
+@inproceedings{lee2020ndn,
+  title={Neural Design Network: Graphic Layout Generation with Constraints},
+  author={Lee, Hsin-Ying and Jiang, Lu and Essa, Irfan and Le, Phuong B and Gong, Haifeng and Yang, Ming-Hsuan and Yang, Weilong},
+  booktitle={Proceedings of the European Conference on Computer Vision (ECCV)},
+  pages={491--506},
+  year={2020}
+}
+
+% Layout Generation - Transformer-based
+
+@inproceedings{gupta2021layouttransformer,
+  title={{LayoutTransformer}: Scene Layout Generation with Conceptual and Spatial Diversity},
+  author={Gupta, Akash and Behl, Aditya and Dhall, Abhinav and Yao, Angela and Mitra, Niloy J},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+  pages={3732--3741},
+  year={2021}
+}
+
+@inproceedings{kong2022blt,
+  title={{BLT}: Bidirectional Layout Transformer for Controllable Layout Generation},
+  author={Kong, Xiang and Jiang, Lu and Chang, Huiwen and Zhang, Han and Hao, Yuan and Gong, Haifeng and Essa, Irfan},
+  booktitle={Proceedings of the European Conference on Computer Vision (ECCV)},
+  pages={474--490},
+  year={2022}
+}
+
+@inproceedings{chang2022maskgit,
+  title={{MaskGIT}: Masked Generative Image Transformer},
+  author={Chang, Huiwen and Zhang, Han and Jiang, Lu and Liu, Ce and Freeman, William T},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  pages={11315--11325},
+  year={2022}
+}
+
+% Layout Generation - Diffusion Models
+
+@inproceedings{inoue2023layoutdm,
+  title={{LayoutDM}: Discrete Diffusion Model for Controllable Layout Generation},
+  author={Inoue, Naoto and Kikuchi, Kotaro and Simo-Serra, Edgar and Otani, Mayu and Yamaguchi, Kota},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  pages={10167--10176},
+  year={2023}
+}
+
+
+
+@article{LayoutDiffusion,
+  title={LayoutDiffusion: Improving Graphic Layout Generation by Discrete Diffusion Probabilistic Models},
+  author={Junyi Zhang and Jiaqi Guo and Shizhao Sun and Jian-Guang Lou and D. Zhang},
+  journal={2023 IEEE/CVF International Conference on Computer Vision (ICCV)},
+  year={2023},
+  pages={7192-7202},
+  url={https://api.semanticscholar.org/CorpusID:257636725}
+}
+
+% Content-aware Layout Generation
+
+@inproceedings{hsu2023posterlayout,
+  title={{PosterLayout}: A New Benchmark and Approach for Content-aware Visual-Textual Presentation Layout},
+  author={Hsu, Hsiao Yuan and He, Xiangteng and Peng, Yuxin and Kong, Hao and Zhang, Qing},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  pages={6018--6026},
+  year={2023}
+}
+
+% Human Pose - Parametric Models
+
+@article{loper2015smpl,
+  title={{SMPL}: A Skinned Multi-Person Linear Model},
+  author={Loper, Matthew and Mahmood, Naureen and Romero, Javier and Pons-Moll, Gerard and Black, Michael J},
+  journal={ACM Transactions on Graphics (TOG)},
+  volume={34},
+  number={6},
+  pages={1--16},
+  year={2015}
+}
+
+% Expressive Human Pose and Shape Estimation
+
+@inproceedings{cai2023smplerx,
+  title={{SMPLer-X}: Scaling Up Expressive Human Pose and Shape Estimation},
+  author={Cai, Zhongang and Yin, Wanqi and Zeng, Ailing and Wei, Chen and Sun, Qingping and Wang, Yanjun and Pang, Hui En and Mei, Haiyi and Zhang, Mingyuan and Zhang, Lei and Loy, Chen Change and Yang, Lei and Liu, Ziwei},
+  booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
+  year={2023}
+}
+
+
+
+% Pose Estimation with Transformers
+
+@inproceedings{song2024posturehmr,
+  title={{PostureHMR}: Posture Transformation for {3D} Human Mesh Recovery},
+  author={Song, Yu-Pei and Wu, Xiao and Yuan, Zhaoquan and Qiao, Jian-Jun and Peng, Qiang},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  pages={9732--9741},
+  year={2024}
+}
+
+@inproceedings{li2024hourglass,
+  title={Hourglass Tokenizer for Efficient Transformer-Based {3D} Human Pose Estimation},
+  author={Li, Wenhao and Liu, Mengyuan and Liu, Hong and Wang, Pichao and Cai, Jialun and Sebe, Nicu},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  pages={604--613},
+  year={2024}
+}
+
+% Text and Context-Based Pose Generation
+
+@inproceedings{feng2024chatpose,
+  title={{ChatPose}: Chatting about {3D} Human Pose},
+  author={Feng, Yao and Choutas, Vasileios and Bolkart, Timo and Tzionas, Dimitrios and Black, Michael J},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  pages={20178--20188},
+  year={2024}
+}
+
+@inproceedings{li2024genzi,
+  title={{GenZI}: Zero-Shot {3D} Human-Scene Interaction Generation},
+  author={Li, Lei and Dai, Angela},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  pages={20465--20474},
+  year={2024}
+}
+
+@inproceedings{kulkarni2024nifty,
+  title={{NIFTY}: Neural Object Interaction Fields for Guided Human Motion Synthesis},
+  author={Kulkarni, Nilesh and Rempe, Davis and Genova, Kyle and Kundu, Abhijit and Johnson, Justin and Fouhey, David and Guibas, Leonidas},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  pages={18062--18072},
+  year={2024}
+}
+
+% Pose-based Motion Generation
+
+@inproceedings{geng2023pct,
+  title={Human Pose as Compositional Tokens},
+  author={Geng, Zigang and Wang, Chunyu and Wei, Yixuan and Liu, Ze and Li, Houqiang and Hu, Han},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  pages={660--671},
+  year={2023}
+}
+
+@inproceedings{guo2024momask,
+  title={{MoMask}: Generative Masked Modeling of {3D} Human Motions},
+  author={Guo, Chuan and Mu, Yuxuan and Javed, Muhammad Gohar and Wang, Sen and Cheng, Li},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  pages={1546--1555},
+  year={2024}
+}
+
+% Diffusion for Pose and Motion
+
+@misc{vanwouwe2024diffusionposer,
+      title={DiffusionPoser: Real-time Human Motion Reconstruction From Arbitrary Sparse Sensors Using Autoregressive Diffusion}, 
+      author={Tom Van Wouwe and Seunghwan Lee and Antoine Falisse and Scott Delp and C. Karen Liu},
+      year={2024},
+      eprint={2308.16682},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2308.16682}, 
+}
+
+
+@inproceedings{pinyoanuntapong2024mmm,
+  title={{MMM}: Generative Masked Motion Model},
+  author={Pinyoanuntapong, Ekkasit and Wang, Pu and Lee, Minwoo and Chen, Chen},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  pages={1546--1555},
+  year={2024}
+}
+
+% Scene-Aware and Interactive Pose Generation
+
+@inproceedings{wang2023sceneaware,
+  title={Scene-Aware Egocentric {3D} Human Pose Estimation},
+  author={Wang, Jian and Liu, Lingjie and Xu, Weipeng and Sarkar, Kripasindhu and Theobalt, Christian},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  pages={13031--13040},
+  year={2023}
+}
+
+@inproceedings{jiang2024scaling,
+  title={Scaling Up Dynamic Human-Scene Interaction Modeling},
+  author={Jiang, Nan and Zhang, Zhiyuan and Li, Hongjie and Ma, Xiaoxuan and Wang, Zan and Chen, Yixin and Liu, Tengyu and Zhu, Yixin and Huang, Siyuan},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  pages={1737--1747},
+  year={2024}
+}
+
+@inproceedings{zhang2024multimodal,
+  title={Multimodal Sense-Informed Forecasting of {3D} Human Motions},
+  author={Zhang, Zhenyu and Wang, Zhe and Chen, Qian and Yang, Wenge and Sun, Xiaohui and Shen, Xionghui and Ni, Bingbing},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  pages={17207--17217},
+  year={2024}
+}
+
+% Pose-Conditioned Image and Video Generation
+
+
+@article{controlling2024smpl,
+  title={Controlling Human Shape and Pose in Text-to-Image Diffusion Models via Domain Adaptation},
+  author={Rawat, Anant and Maheshwari, Vishnu and Sudhakar, Kalyan and Singh, Mahesh and others},
+  journal={arXiv preprint arXiv:2411.04724},
+  year={2024}
+}
+
+@inproceedings{pose2018video,
+  title={Pose Guided Human Video Generation},
+  author={Ceylan, Duygu and Huang, Chun-Hao P and Mitra, Niloy J},
+  booktitle={Proceedings of the European Conference on Computer Vision (ECCV)},
+  pages={201--216},
+  year={2018}
+}
+
+% Additional useful references
+
+
+@misc{petrovich2021actor,
+      title={Action-Conditioned 3D Human Motion Synthesis with Transformer VAE}, 
+      author={Mathis Petrovich and Michael J. Black and Gül Varol},
+      year={2021},
+      eprint={2104.05670},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2104.05670}, 
+}
+
+@article{razavi2019vqvae2,
+  title={Generating Diverse High-Fidelity Images with {VQ-VAE-2}},
+  author={Razavi, Ali and van den Oord, A{\"a}ron and Vinyals, Oriol},
+  journal={Advances in Neural Information Processing Systems (NeurIPS)},
+  volume={32},
+  year={2019}
+}
+
+@software{OpenCLIP,
+  author       = {Ilharco, Gabriel and
+                  Wortsman, Mitchell and
+                  Wightman, Ross and
+                  Gordon, Cade and
+                  Carlini, Nicholas and
+                  Taori, Rohan and
+                  Dave, Achal and
+                  Shankar, Vaishaal and
+                  Namkoong, Hongseok and
+                  Miller, John and
+                  Hajishirzi, Hannaneh and
+                  Farhadi, Ali and
+                  Schmidt, Ludwig},
+  title        = {OpenCLIP},
+  month        = jul,
+  year         = 2021,
+  note         = {If you use this software, please cite it as below.},
+  publisher    = {Zenodo},
+  version      = {0.1},
+  doi          = {10.5281/zenodo.5143773},
+  url          = {https://doi.org/10.5281/zenodo.5143773}
+}
+
+
+
+@inproceedings{podell2023sdxl,
+  title={SDXL: Improving Latent Diffusion Models for High-Resolution Image Synthesis},
+  author={Podell, Dustin and English, Zion and Lacey, Kyle and Blattmann, Andreas and Dockhorn, Tim and M{\"u}ller, Jonas and Penna, Joe and Rombach, Robin},
+  booktitle={Proceedings of the International Conference on Learning Representations (ICLR)},
+  year={2024}
+}
+
+@misc{google2025nanobanana,
+  title   = {Nano Banana Pro},
+  author  = {{Google DeepMind}},
+  year    = {2025},
+  url     = {https://blog.google/innovation-and-ai/products/nano-banana-pro/},
+  note    = {Accessed: 2026-03-31}
+}
+
+
+@article{geminiteam2023gemini,
+  title   = {Gemini: A Family of Highly Capable Multimodal Models},
+  author  = {{Gemini Team, Google}},
+  journal = {arXiv preprint arXiv:2312.11805},
+  year    = {2023}
+}
+
+@misc{ye2023ipadaptertextcompatibleimage,
+      title={IP-Adapter: Text Compatible Image Prompt Adapter for Text-to-Image Diffusion Models}, 
+      author={Hu Ye and Jun Zhang and Sibo Liu and Xiao Han and Wei Yang},
+      year={2023},
+      eprint={2308.06721},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2308.06721}, 
+}
+
+
+@article{layerdiffuse,
+  title={Transparent Image Layer Diffusion using Latent Transparency},
+  author={Lvmin Zhang and Maneesh Agrawala},
+  journal={ACM Transactions on Graphics (TOG)},
+  year={2024},
+  volume={43},
+  pages={1 - 15},
+  url={https://api.semanticscholar.org/CorpusID:268032388}
+}
+
+@article{LayoutGAN,
+  title={LayoutGAN: Synthesizing Graphic Layouts With Vector-Wireframe Adversarial Networks},
+  author={Jianan Li and Jimei Yang and Aaron Hertzmann and Jianming Zhang and Tingfa Xu},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  year={2020},
+  volume={43},
+  pages={2388-2399},
+  url={https://api.semanticscholar.org/CorpusID:209894294}
+}
+
+
+@misc{cole,
+      title={COLE: A Hierarchical Generation Framework for Multi-Layered and Editable Graphic Design}, 
+      author={Peidong Jia and Chenxuan Li and Yuhui Yuan and Zeyu Liu and Yichao Shen and Bohan Chen and Xingru Chen and Yinglin Zheng and Dong Chen and Ji Li and Xiaodong Xie and Shanghang Zhang and Baining Guo},
+      year={2024},
+      eprint={2311.16974},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2311.16974}, 
+}
+
+@inproceedings{opencole,
+  title={{OpenCOLE: Towards Reproducible Automatic Graphic Design Generation}},
+  author={Naoto Inoue and Kento Masui and Wataru Shimoda and Kota Yamaguchi},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)},
+  year={2024},
+}
+
+
+@article{art,
+  title={ART: Anonymous Region Transformer for Variable Multi-Layer Transparent Image Generation},
+  author={Yifan Pu and Yiming Zhao and Zhicong Tang and Ruihong Yin and Haoxing Ye and Yuhui Yuan and Dong Chen and Jianmin Bao and Sirui Zhang and Yanbin Wang and Lin Liang and Lijuan Wang and Ji Li and Xiu Li and Zhouhui Lian and Gao Huang and Baining Guo},
+  journal={2025 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2025},
+  pages={7952-7962},
+  url={https://api.semanticscholar.org/CorpusID:276580289}
+}
+
+
+@article{igd,
+  title={Igd: Instructional Graphic Design With Multimodal Layer Generatio},
+  author={Yadong Qu and Shancheng Fang and Yuxin Wang and Xiaorui Wang and Zhineng Chen and Hongtao Xie and Yongdong Zhang},
+  journal={2025 IEEE/CVF International Conference on Computer Vision (ICCV)},
+  year={2025},
+  pages={18218-18228},
+  url={https://api.semanticscholar.org/CorpusID:280232207}
+}
+
+@inproceedings{Graphist,
+  title={Graphic Design with Large Multimodal Model},
+  author={Yutao Cheng and Zhao Zhang and Maoke Yang and Hui Nie and Chunyuan Li and Xinglong Wu and Jie Shao},
+  booktitle={AAAI Conference on Artificial Intelligence},
+  year={2025},
+  url={https://api.semanticscholar.org/CorpusID:277752700}
+}
+
+
+@article{LaDeCo,
+  title={From Elements to Design: A Layered Approach for Automatic Graphic Design Composition},
+  author={Jiawei Lin and Shizhao Sun and Danqing Huang and Ting Liu and Ji Li and Jiang Bian},
+  journal={2025 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2024},
+  pages={8128-8137},
+  url={https://api.semanticscholar.org/CorpusID:280016385}
+}
+
+@article{VTN,
+  title={Variational Transformer Networks for Layout Generation},
+  author={Diego Mart{\'i}n Arroyo and Janis Postels and Federico Tombari},
+  journal={2021 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2021},
+  pages={13637-13647},
+  url={https://api.semanticscholar.org/CorpusID:233033690}
+}
+
+
+@inproceedings{LayoutPrompter,
+author = {Lin, Jiawei and Guo, Jiaqi and Sun, Shizhao and Yang, Zijiang James and Lou, Jian-Guang and Zhang, Dongmei},
+title = {LayoutPrompter: awaken the design ability of large language models},
+year = {2023},
+publisher = {Curran Associates Inc.},
+address = {Red Hook, NY, USA},
+booktitle = {Proceedings of the 37th International Conference on Neural Information Processing Systems},
+articleno = {1902},
+numpages = {28},
+location = {New Orleans, LA, USA},
+series = {NIPS '23}
+}
+
+
+@inproceedings{PosterLlama,
+author = {Seol, Jaejung and Kim, Seojun and Yoo, Jaejun},
+title = {PosterLlama: Bridging Design Ability of&nbsp;Language Model to&nbsp;Content-Aware Layout Generation},
+year = {2024},
+isbn = {978-3-031-73006-1},
+publisher = {Springer-Verlag},
+address = {Berlin, Heidelberg},
+url = {https://doi.org/10.1007/978-3-031-73007-8_26},
+doi = {10.1007/978-3-031-73007-8_26},
+booktitle = {Computer Vision – ECCV 2024: 18th European Conference, Milan, Italy, September 29–October 4, 2024, Proceedings, Part LXXXII},
+pages = {451–468},
+numpages = {18},
+keywords = {Content-Aware Layout Generation, Graphic Design, Language Model},
+location = {Milan, Italy}
+}
+
+@article{Content-aware-Generative,
+author = {Zheng, Xinru and Qiao, Xiaotian and Cao, Ying and Lau, Rynson W. H.},
+title = {Content-aware generative modeling of graphic design layouts},
+year = {2019},
+issue_date = {August 2019},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {38},
+number = {4},
+issn = {0730-0301},
+url = {https://doi.org/10.1145/3306346.3322971},
+doi = {10.1145/3306346.3322971},
+abstract = {Layout is fundamental to graphic designs. For visual attractiveness and efficient communication of messages and ideas, graphic design layouts often have great variation, driven by the contents to be presented. In this paper, we study the problem of content-aware graphic design layout generation. We propose a deep generative model for graphic design layouts that is able to synthesize layout designs based on the visual and textual semantics of user inputs. Unlike previous approaches that are oblivious to the input contents and rely on heuristic criteria, our model captures the effect of visual and textual contents on layouts, and implicitly learns complex layout structure variations from data without the use of any heuristic rules. To train our model, we build a large-scale magazine layout dataset with fine-grained layout annotations and keyword labeling. Experimental results show that our model can synthesize high-quality layouts based on the visual semantics of input images and keyword-based summary of input text. We also demonstrate that our model internally learns powerful features that capture the subtle interaction between contents and layouts, which are useful for layout-aware design retrieval.},
+journal = {ACM Trans. Graph.},
+month = jul,
+articleno = {133},
+numpages = {15},
+keywords = {layout, graphic design, deep generative networks, content-aware}
+}
+
+
+@article{OSX,
+  title={One-Stage 3D Whole-Body Mesh Recovery with Component Aware Transformer},
+  author={Jing-de Lin and Ailing Zeng and Haoqian Wang and Lei Zhang and Y. Li},
+  journal={2023 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2023},
+  pages={21159-21168},
+  url={https://api.semanticscholar.org/CorpusID:257771455}
+}
+
+
+@article{SMPLX,
+  title={Expressive Body Capture: 3D Hands, Face, and Body From a Single Image},
+  author={Georgios Pavlakos and Vasileios Choutas and Nima Ghorbani and Timo Bolkart and Ahmed A. A. Osman and Dimitrios Tzionas and Michael J. Black},
+  journal={2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2019},
+  pages={10967-10977},
+  url={https://api.semanticscholar.org/CorpusID:109932872}
+}
+
+@misc{Qwen3-VL,
+      title={Qwen3-VL Technical Report}, 
+      author={Shuai Bai and Yuxuan Cai and Ruizhe Chen and Keqin Chen and Xionghui Chen and Zesen Cheng and Lianghao Deng and Wei Ding and Chang Gao and Chunjiang Ge and Wenbin Ge and Zhifang Guo and Qidong Huang and Jie Huang and Fei Huang and Binyuan Hui and Shutong Jiang and Zhaohai Li and Mingsheng Li and Mei Li and Kaixin Li and Zicheng Lin and Junyang Lin and Xuejing Liu and Jiawei Liu and Chenglong Liu and Yang Liu and Dayiheng Liu and Shixuan Liu and Dunjie Lu and Ruilin Luo and Chenxu Lv and Rui Men and Lingchen Meng and Xuancheng Ren and Xingzhang Ren and Sibo Song and Yuchong Sun and Jun Tang and Jianhong Tu and Jianqiang Wan and Peng Wang and Pengfei Wang and Qiuyue Wang and Yuxuan Wang and Tianbao Xie and Yiheng Xu and Haiyang Xu and Jin Xu and Zhibo Yang and Mingkun Yang and Jianxin Yang and An Yang and Bowen Yu and Fei Zhang and Hang Zhang and Xi Zhang and Bo Zheng and Humen Zhong and Jingren Zhou and Fan Zhou and Jing Zhou and Yuanzhi Zhu and Ke Zhu},
+      year={2025},
+      eprint={2511.21631},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2511.21631}, 
+}
+
+@inproceedings{LADEREIN,
+  title={Harnessing Layered Graphic Designs with Real Intentions for Text-to-Design Generation},
+  author={Song, Xinya and Yang, Bo and Cao, Ying},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={4729--4738},
+  year={2026}
+}
+
+
+@article{controlnet,
+  title={Adding Conditional Control to Text-to-Image Diffusion Models},
+  author={Lvmin Zhang and Anyi Rao and Maneesh Agrawala},
+  journal={2023 IEEE/CVF International Conference on Computer Vision (ICCV)},
+  year={2023},
+  pages={3813-3824},
+  url={https://api.semanticscholar.org/CorpusID:256827727}
+}
+
+@misc{yang2026learninginteractionimagelayout,
+      title={Learning Interaction between Image and Layout Priors for Joint Image-Layout Generation in Design Templates}, 
+      author={Shirong Yang and Bo Yang and Ying Cao},
+      year={2026},
+      eprint={2609.11519},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2609.11519}, 
+}
